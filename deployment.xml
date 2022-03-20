@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.zend.com/server/deployment-descriptor/1.0"
+version="1.0">
+<type>application</type>
+<name>daw2_m08uf23_projecte_sousa_ferran</name>
+<summary>Projecte del M08 UF2-3</summary>
+<version>
+<release>1.0.0</release>
+</version>
+<appdir></appdir>
+<docroot></docroot>
+</package>
