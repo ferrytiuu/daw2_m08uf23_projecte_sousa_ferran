@@ -51,8 +51,12 @@ $ldap->bind();
 
 $dn ='uid='.$uid.',ou='.$ou.',dc=fjeclot,dc=net';
 
-if ($ldap->add($dn, $ldaprecord)) {
-    echo "Usuari creat <br />";
+
+try {
+    if ($ldap->add($dn, $ldaprecord)){
+        echo "Usuari creat<br>";}
+} catch (Exception $e) {
+    echo "No 's'ha pogut crear l'usuari<br>";
 }
 
 echo '<a href="menu.php"><button>Torna al menú</button></a>';

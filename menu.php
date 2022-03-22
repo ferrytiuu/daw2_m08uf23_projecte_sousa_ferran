@@ -57,6 +57,38 @@ body {
         <input type="text" id="description" name="description"><br>
         <input type="submit" value="Crea">
     </form>
+    
+    <h2>Esborrar usuari</h2>
+	<form action="esborrarUsuaris.php" method="POST">
+		<label for="uid">UID</label>
+        <input type="text" id="uid" name="uid"><br>
+        <label for="ou">OU</label>
+        <input type="text" id="ou" name="ou"><br>
+        <input type="submit" value="Esborra">
+    </form>
+    
+    <h2>Modificar usuari</h2>
+	<form action="modificarUsuari.php" method="POST">
+		<label for="uid">UID</label>
+        <input type="text" id="uid" name="uid"><br>
+        <label for="ou">OU</label>
+        <input type="text" id="ou" name="ou"><br>
+        <input type="radio" name="radio" value="uidNumber" /><label for="uidNumber">uidNumber</label>
+        <input type="radio" name="radio" value="gidNumber" /><label for="gidNumber">gidNumber</label>
+        <input type="radio" name="radio" value="homeDirectory" /><label for="homeDirectory">homeDirectory</label>
+        <input type="radio" name="radio" value="loginShell" /><label for="loginShell">loginShell</label>
+        <input type="radio" name="radio" value="cn" /><label for="cn">cn</label>
+        <input type="radio" name="radio" value="sn" /><label for="sn">sn</label>
+        <input type="radio" name="radio" value="givenName" /><label for="givenName">givenName</label>
+        <input type="radio" name="radio" value="postalAddress" /><label for="postalAddress">postalAddress</label>
+        <input type="radio" name="radio" value="mobile" /><label for="mobile">mobile</label>
+        <input type="radio" name="radio" value="telephoneNumber" /><label for="telephoneNumber">telephoneNumber</label>
+        <input type="radio" name="radio" value="title" /><label for="title">title</label>
+        <input type="radio" name="radio" value="description" /><label for="description">description</label><br>
+        <label for="nouValor">Nou valor</label>
+        <input type="text" id="nouValor" name="nouValor"><br>
+        <input type="submit" value="Modifica">
+    </form>
 	
 </body>
 </html>
