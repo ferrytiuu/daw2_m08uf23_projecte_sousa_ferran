@@ -26,7 +26,7 @@ body {
     </form>
     
 	<h2>Afegir usauris</h2>
-	<form action="afegirusuaris.php" method="POST">
+	<form action="afegirUsuaris.php" method="POST">
 		<label for="uid">UID</label>
         <input type="text" id="uid" name="uid">&emsp;&emsp;&emsp;&emsp;
 		<label for="ou">OU</label>
@@ -57,8 +57,6 @@ body {
         <input type="text" id="description" name="description"><br>
         <input type="submit" value="Crea">
     </form>
-	
-	
 	
 </body>
 </html>
